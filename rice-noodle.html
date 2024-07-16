@@ -9,19 +9,24 @@
 </head>
 
 <body>
-  <img src="" alt="Lis Image">
-  <p>Rice Or Noodle</p>
-  <div class="container__choice">
-    <div class="input-box">
-      <input type="radio" name="item" id="rice">
-      <label for="rice">rice</label>
+  <div class="container">
+
+    <header class="header">
+      <img class="profile" src="./Avatar-Profile.png" alt="Lis Image">
+      <p>Rice Or Noodle</p>
+    </header>
+    <div class="container__choice">
+      <div class="input-box">
+        <input type="radio" name="item" id="rice">
+        <label for="rice">rice</label>
+      </div>
+      <div class="input-box">
+        <input type="radio" name="item" id="noodle">
+        <label for="noodle">noodle</label>
+      </div>
     </div>
-    <div class="input-box">
-      <input type="radio" name="item" id="noodle">
-      <label for="noodle">noodle</label>
-    </div>
+    <button type="button" class="menu-button">Next</button>
   </div>
-  <button id="changePageButton">Next</button>
 
 
   <script src="./app.js"></script>
