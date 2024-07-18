@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.app {
+  height: 100vh;
+
+}
 .profile {
   width: 100px;
   justify-self: center;
@@ -11,7 +15,6 @@
 
 .container {
   display: grid;
-  /* text-align: center; */
   gap: 20px;
 }
 
@@ -20,22 +23,38 @@
   justify-content: center;
 }
 
-button {
-  width: 100px;
-  justify-self: center;
+.btn-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
+
+button {
+  padding: 8px 10px;
+  width: 100px;
+  background-color: #DC2F2F;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  box-shadow: 0px 5px 8px 0px rgb(75, 4, 4);
+}
+
+button:hover {
+  background-color: #9e0f0f;
+}
+
 .container__choice {
   display: grid;
   gap: 8px;
   width: 300px;
-  /* background-color: blue; */
   margin: 0 auto;
-  /* justify-content: center; */
 }
 .input-box{
   border: 2px solid #000;
   border-radius: 5px;
-  /* background-color: red; */
   width: 300px;
   position: relative;
   overflow: hidden;
@@ -43,11 +62,14 @@ button {
 }
 
 input[type="radio"]{
-  display: none;
+  opacity: 0;
 }
+
 input[type="radio"]:checked ~ label{
   background-color: rgba(255, 255, 0, 0.452);
+  outline: 4px dotted #e73;
 }
+
 label {
   position: absolute;
   inset: 0;
