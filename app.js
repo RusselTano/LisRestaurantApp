@@ -53,7 +53,8 @@ const page = {
     utils.pageContent(
       `<img class="profile" src="./Avatar-Profile.png" alt="Lis Image">
       <p>Rice Or Noodle</p>`,
-      ` <div class="container__choice">
+      `
+      <div class="container__choice">
         <div class="input-box">
           <input type="radio" name="item" id="rice">
           <label for="rice">rice</label>
